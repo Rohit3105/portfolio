@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Giri</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>RG Rohit</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#leetcode">LeetCode</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="grid-bg"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h3>Hi, I'm</h3>
+      <h1>Rohit Giri</h1>
+      <p>Java Backend Developer | Spring Boot | DSA</p>
+
+      <div class="buttons">
+        <a href="https://github.com/Rohit3105" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rohit-giri-567377229" target="_blank">LinkedIn</a>
+        <a href="https://leetcode.com/u/Rohit3105/" target="_blank">LeetCode</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="profile.jpeg">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <p>
+    I am Rohit Giri, a B.Tech Computer Science (AI) student at 
+    GL Bajaj Institute of Technology and Management, Greater Noida. 
+    Originally from Varanasi, I am passionate about backend development 
+    and building scalable applications.
+  </p>
+
+  <p>
+    I specialize in Java and Spring Boot, with strong understanding of 
+    REST APIs, database management, and system design fundamentals.
+  </p>
+
+  <p>
+    I have a strong foundation in Data Structures and Algorithms, and have 
+    solved 400+ problems on LeetCode, focusing on improving problem-solving 
+    skills and writing optimized solutions.
+  </p>
+
+  <p>
+    I have built real-world projects like a cloud-based task management system 
+    (Ambition Engine) and a sports matchmaking platform (TurfMatch), focusing on 
+    clean architecture and efficient backend logic.
+  </p>
+
+  <p>
+    My goal is to become a skilled backend engineer and contribute to building 
+    high-performance and impactful systems.
+  </p>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Spring Boot</span>
+    <span>Hibernate</span>
+    <span>MySQL</span>
+    <span>REST APIs</span>
+    <span>DSA</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<!-- LEETCODE -->
+<section id="leetcode">
+  <h2>LeetCode Profile</h2>
+
+  <div class="leetcode-container">
+
+    <div class="leetcode-card">
+      <h3>Rohit3105</h3>
+      <p>Rank: 301,142</p>
+      <p>Contest Rating: 1392</p>
+
+      <canvas id="leetcodeChart" style="max-width:200px;"></canvas>
+
+      <div class="legend">
+        <span style="color:#22c55e;">Easy: 185</span>
+        <span style="color:#facc15;">Medium: 189</span>
+        <span style="color:#ef4444;">Hard: 14</span>
+      </div>
+
+      <p class="total">🔥 400+ Problems Solved</p>
+    </div>
+
+    <div class="leetcode-image">
+      <img src="leetcode.png">
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <a href="ambition.html" class="project-card">
+      <img src="ambition.png">
+      <h3>Ambition Engine</h3>
+      <p>Cloud-based task manager using Spring Boot</p>
+    </a>
+
+    <a href="turf.html" class="project-card">
+      <img src="turf.png">
+      <h3>TurfMatch</h3>
+      <p>Sports matchmaking platform</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>📞 +91-9336282284</p>
+  <p>📧 rgrohitgiri88@gmail.com</p>
+
+  <p>
+    📸 Instagram:
+    <a href="https://www.instagram.com/_rohitgoswami_77/?hl=en" target="_blank">
+      @_rohitgoswami_77
+    </a>
+  </p>
+
+  <p>
+    💼 LinkedIn:
+    <a href="https://www.linkedin.com/in/rohit-giri-567377229" target="_blank">
+      Rohit Giri
+    </a>
+  </p>
+
+  <p>
+    💻 GitHub:
+    <a href="https://github.com/Rohit3105" target="_blank">
+      Rohit3105
+    </a>
+  </p>
+
+</section>
+
+<footer>
+  <p>© 2026 Rohit Giri</p>
+</footer>
+
+<!-- CHART -->
+<script>
+new Chart(document.getElementById('leetcodeChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Easy','Medium','Hard'],
+    datasets: [{
+      data: [185,189,14],
+      backgroundColor: ['#22c55e','#facc15','#ef4444']
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } }
+  }
+});
+</script>
+
+</body>
+</html>
